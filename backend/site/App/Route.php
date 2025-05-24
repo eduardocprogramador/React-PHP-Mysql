@@ -6,7 +6,7 @@ use App\Connection;
 class Route extends Bootstrap{
 
     protected function initRoutes(){
-        $routes['home']=array(
+        $routes['cursos']=array(
             'route' => '/api/cursos',
             'controller' => 'indexController',
             'action' => 'index'
