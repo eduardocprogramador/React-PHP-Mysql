@@ -6,10 +6,15 @@ use App\Connection;
 class Route extends Bootstrap{
 
     protected function initRoutes(){
-        $routes['cursos']=array(
-            'route' => '/api/cursos',
-            'controller' => 'indexController',
-            'action' => 'index'
+        $routes['criar_conta']=array(
+            'route' => '/criar_conta',
+            'controller' => 'AuthController',
+            'action' => 'criar_conta'
+        );
+        $routes['login ']=array(
+            'route' => '/login',
+            'controller' => 'AuthController',
+            'action' => 'login'
         );
         $this->setRoutes($routes);
     }
